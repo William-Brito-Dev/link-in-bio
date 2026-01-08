@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Brito | Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <header class="header">
+        <div class="header__img"></div>
+        <h1 class="header__title">William Brito</h1>
+        <p class="header__description">Desenvolvedor Web focado em criar interfaces modernas e funcionais com HTML e CSS.</p>
+    </header>
+        
+    <section class="hero__card project">
+        <h2 class="hero__title">Portifólio</h2>
+        <p>Desenvolvimento do meu portifólio pessoal.</p>
+        <span class="badge">Projeto Pessoal</span>
+    </section>
+    
+    <section class="hero__card social">
+        <h2 class="hero__title">Conecte-se</h2>
+        <div class="social__links">
+            <a href="https://github.com/William-Brito-Dev" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/william-brito-dev" target="_blank">LinkedIn</a>
+        </div>
+    </section>
+    
+    <section class="hero__card skill">
+        <h3>Front-end</h3>
+        <p>Estruturação semântica com HTML5.</p>
+    </section>
+    
+    <section class="hero__card strategy">
+        <h3>Estilização</h3>
+        <p>Layouts modernos com CSS3 (Flexbox e Grid).</p>
+    </section>
+    
+    <section class="hero__card contact">
+        <div id="form-container">
+            <h4>Vamos iniciar um projeto?</h4>
+            <form class="hero__form" id="propostaForm">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <textarea placeholder="Como posso te ajudar?" required></textarea>
+                <button type="submit" class="btn__primary">Enviar mensagem</button>
+            </form>
+        </div>
+        <div id="success-msg" style="display: none; text-align: center;">
+            <h4 style="color: #00ff88;">✓ Mensagem enviada!</h4>
+            <p>Obrigado pelo contato, responderei em breve.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
