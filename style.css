@@ -22,23 +22,62 @@ body {
     background-color: var(--fundo);
     color: var(--texto);
     font-family: 'Inter', sans-serif;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
-    padding: 5rem 2rem;
-    transform: translateX(50%);
+    align-items: center;
+    padding: 2rem;
 }
 
 .body {
     display: grid;
     max-width: 1000px;
     width: 100%;
+    margin: 0 auto;
     grid-template-areas: 
+        "nav nav nav nav"
         "header header header header"
         "card1 card1 card2 card2"
         "card1 card1 card3 card4"
         "card5 card5 card5 card5";
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
+}
+
+.navbar {
+    grid-area: nav;
+    background-color: var(--card-bg);
+    border: 1px solid var(--borda);
+    border-radius: 1.5rem;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.nav__link {
+    color: var(--texto-sec);
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav__link:hover {
+    color: var(--texto);
 }
 
 .hero__card, .header {
@@ -161,12 +200,29 @@ body {
     background: var(--accent);
 }
 
+.success-message {
+    display: none;
+    text-align: center;
+}
+
+.success-message__title {
+    color: var(--accent);
+}
+
 @media (max-width: 768px) {
     .body {
         display: flex;
         flex-direction: column;
-        transform: none;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem;
+    }
 
+    .nav__list {
+        gap: 1.5rem;
     }
     
     .header__title {
