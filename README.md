@@ -13,7 +13,6 @@ Para garantir performance máxima e um código limpo, o projeto foi construído 
   - **CSS Grid Areas**: Para a construção da malha (grid) complexa.
   - **CSS Variables**: Gerenciamento centralizado de cores e temas.
   - **Flexbox**: Para alinhamento interno e responsividade mobile.
-- **JavaScript (Vanilla)**: Lógica para manipulação do DOM e feedback do formulário.
 
 ---
 
