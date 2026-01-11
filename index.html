@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="body">
+    <nav class="navbar">
+        <a href="#" class="nav__logo">WB</a>
+        <ul class="nav__list">
+            <li><a href="https://william-brito-dev.github.io/portifolio/" rel="external noopener noreferrer" class="nav__link">Home</a></li>
+            <li><a href="mailto:contato.williambrito.dev@hotmail.com" class="nav__link">Contato</a></li>
+        </ul>
+    </nav>
+
     <header class="header">
         <div class="header__img"></div>
         <h1 class="header__title">William Brito</h1>
@@ -18,7 +26,7 @@
         
     <section class="hero__card project">
         <h2 class="hero__title">Portifólio</h2>
-        <p>Desenvolvimento do meu portifólio pessoal.</p>
+        <p>Desenvolvimento do meu portifólio pessoal</p>
         <span class="badge">Projeto Pessoal</span>
     </section>
     
@@ -50,12 +58,10 @@
                 <button type="submit" class="btn__primary">Enviar mensagem</button>
             </form>
         </div>
-        <div id="success-msg" style="display: none; text-align: center;">
-            <h4 style="color: #00ff88;">✓ Mensagem enviada!</h4>
+        <div id="success-msg" class="success-message">
+            <h4 class="success-message__title">✓ Mensagem enviada!</h4>
             <p>Obrigado pelo contato, responderei em breve.</p>
         </div>
     </section>
-
-    <script src="script.js"></script>
 </body>
 </html>
